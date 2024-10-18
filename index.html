@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="page.css">
+
+    <title>Playback</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="Group 1.png" alt="">
+            </div>
+
+            <div class="middle">
+                <h1 id="oomb">Playback</h1>
+            </div>
+
+            </div>
+            <div class="right">
+                <img src="Group 2.png" alt="">
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="introduction">
+        <div class="loading">
+            <img src="slelct.png" alt="">
+        </div>
+
+        <img src="loading pic.png" alt="lol" class="img">
+        <h2>HOME</h2>
+        <h3>HOME</h3>
+
+        <div class="additional_buttons">
+            <a href="#page2">
+                <img src="stats.png" alt="">
+            </a>
+            <a href="#page3">
+                <img src="inventory.png" alt="">
+            </a>
+            
+        </div>
+    </section>
+
+    <section class="page2" id="page2">
+        <h2>STATS</h2>
+        <h3>STATS</h3>
+        <div class="data">
+            <img src="deve.png" alt="developer" class="img1">
+            <img src="pfp.png" alt="pfp" class="img">
+
+            <div class="sub-data">
+                <img src="name.png" alt="developer" class="img">
+                <img src="rank.png" alt="pfp" class="img">
+                <img src="special.png" alt="developer" class="img">
+                <img src="attritube.png" alt="pfp" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="page3" id="page3">
+        <h2>INVENTORY</h2>
+        <h3>INVENTORY</h3>
+        
+        <div class="grid_holders">
+            <div class="grid1">
+                <div class="image_holder">
+                    <div class="top_buttons">
+                        <img src="bookmark.png" alt="developer" class="imgh">
+                        <img src="like.png" alt="pfp" class="imgh">
+                    </div>
+
+                    <img src="top left img.png" alt="developer" class="img1">
+
+                    <div class="bottom_buttons">
+                        <img src="expand img.png" alt="developer" class="imgh2">
+                        <img src="more img.png" alt="developer" class="imgh2">
+                    </div>
+                </div>
+
+                <div class="image_holder">
+                    <div class="top_buttons">
+                        <img src="bookmark.png" alt="developer" class="imgh">
+                        <img src="like.png" alt="pfp" class="imgh">
+                    </div>
+
+                    <img src="top right img.png" alt="developer" class="img2">
+
+                    <div class="bottom_buttons">
+                        <img src="expand img.png" alt="developer" class="imgh2">
+                        <img src="more img.png" alt="developer" class="imgh2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid2">
+                <div class="image_holder">
+                    <div class="top_buttons">
+                        <img src="bookmark.png" alt="developer" class="imgh">
+                        <img src="like.png" alt="pfp" class="imgh">
+                    </div>
+
+                    <img src="middle left img.png" alt="developer" class="img1">
+
+                    <div class="bottom_buttons">
+                        <img src="expand img.png" alt="developer" class="imgh2">
+                        <img src="more img.png" alt="developer" class="imgh2">
+                    </div>
+                </div>
+
+                <div class="image_holder">
+                    <div class="top_buttons">
+                        <img src="bookmark.png" alt="developer" class="imgh">
+                        <img src="like.png" alt="pfp" class="imgh">
+                    </div>
+
+                    <img src="middle righ img.png" alt="developer" class="img2">
+
+                    <div class="bottom_buttons">
+                        <img src="expand img.png" alt="developer" class="imgh2">
+                        <img src="more img.png" alt="developer" class="imgh2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid1">
+                <div class="image_holder">
+                    <div class="top_buttons">
+                        <img src="bookmark.png" alt="developer" class="imgh">
+                        <img src="like.png" alt="pfp" class="imgh">
+                    </div>
+
+                    <img src="bottom left img.png" alt="developer" class="img1">
+
+                    <div class="bottom_buttons">
+                        <img src="expand img.png" alt="developer" class="imgh2">
+                        <img src="more img.png" alt="developer" class="imgh2">
+                    </div>
+                </div>
+
+                <div class="image_holder">
+                    <div class="top_buttons">
+                        <img src="bookmark.png" alt="developer" class="imgh">
+                        <img src="like.png" alt="pfp" class="imgh">
+                    </div>
+
+                    <img src="bottom right img.png" alt="developer" class="img2">
+
+                    <div class="bottom_buttons">
+                        <img src="expand img.png" alt="developer" class="imgh2">
+                        <img src="more img.png" alt="developer" class="imgh2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    window.onscroll = function() {
+        var nav = document.getElementById('oomb');
+        if ( window.pageYOffset > 600 ) {
+            nav.style.color = "#FF4C00";
+            nav.style.backgroundColor = "#000000"
+        } else {
+            nav.style.color = "#000000";
+            nav.style.backgroundColor = "#DAD9D9"
+        }
+    }
+</script>
+</html>

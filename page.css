@@ -1,0 +1,361 @@
+:root {
+    --color1: #FF4C00;
+    --color2: #000000;
+    --color3: #FFFFFF;
+    --color4: #DAD9D9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--color4);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    color: var(--text-color1);
+    font-size: 30px;
+}
+
+nav {
+    position: fixed;
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    height: 60px;
+    z-index: 3;
+}
+
+nav .left img {
+    vertical-align: middle;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+nav .left img:hover {
+    width: 70px;
+}
+
+nav .right {
+    padding-bottom: 10px;
+}
+
+nav .right img:hover {
+    width: 90px;
+}
+
+nav .left {
+    padding-bottom: 10px;
+}
+
+nav .right img {
+    vertical-align: middle;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav .middle h1 {
+    padding: 0 25px;
+    font-family: 'DotGothic16' sans-serif;
+    color: var(--color2);
+    background-color: var(--color4);
+}
+
+.flex {
+    display: flex;
+}
+
+.introduction .loading img {
+    margin-top: 100px;
+    padding: 30px 0;
+    margin-left: 600px;
+    width: 300px;
+}
+
+.introduction .img:hover {
+    height: 220px;
+    width: 720px;
+}
+
+.introduction .additional_buttons {
+    margin-top: 100px;
+    margin-left: 600px;
+    margin-bottom: 100px;
+    width: 200px;
+}
+
+.introduction .additional_buttons img {
+    margin: 15px 0;
+    width: 270px;
+    transition: 0.2s;
+}
+
+
+.introduction .additional_buttons img:hover {
+    width: 290px;
+}
+
+.introduction h2 {
+    margin-top: 0px;
+    margin-left: 600px;
+    color: var(--color2);
+    font-size: 150px;
+}
+
+.introduction h3 {
+    margin-top: -225px;
+    margin-left: 610px;
+    color: var(--color1);
+    font-size: 150px;
+}
+
+.introduction .img {
+    position: absolute;
+    z-index: -1;
+    height: 300px;
+    align-self: center;
+    margin-left: 220px;
+    transform: skew(-10deg);
+    border: 5px solid var(--color2);
+    width: 1050px;
+    height: auto;
+}
+
+.page2 {
+    align-items: center;
+    background-image: url("background.png");
+    border: 15px solid var(--color3);
+}
+
+.page2 h2 {
+    margin-left: 600px;
+    font-size: 120px;
+}
+
+.page2 h3 {
+    margin-left: 610px;
+    font-size: 120px;
+    margin-top: -180px;
+    color: var(--color3);
+}
+
+.page2 .data {
+    margin: 0 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page2 .data img {
+    width: 300px;
+    margin: 25px 100px;
+    margin-left: 550px;
+}
+
+.page2 .data .img1 {
+    width: 300px;
+    margin: 25px 100px;
+    margin-left: 550px;
+    transition: 0.2s;
+}
+
+.page2 .data .img1:hover {
+    width: 320px;
+}
+
+.page2 .data .sub-data img {
+    width: 450px;
+    margin: 15px 100px;
+    margin-right: 600px;
+}
+
+
+.page3 {
+    align-items: center;
+    border: 15px solid var(--color3);
+}
+
+.page3 h2 {
+    margin-left: 500px;
+    font-size: 120px;
+}
+
+.page3 h3 {
+    margin-left: 510px;
+    font-size: 120px;
+    margin-top: -180px;
+    color: var(--color1);
+}
+
+.page3 .grid_holders {
+    width: 100%;
+    margin-left: 200px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.page3 .grid_holders .grid1 {
+    width: fit-content;
+    height: 500px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.page3 .grid_holders .grid1 .image_holder {
+    width: fit-content;
+    margin: 0 0;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 13fr 1fr;
+    overflow: hidden;
+    border: 10px solid var(--color2);
+}
+
+.page3 .grid_holders .grid1 .image_holder .img1 {
+    margin-top: -100px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    grid-template-rows: 1fr 13fr 1fr;
+    overflow: hidden;
+}
+
+.page3 .grid_holders .grid1 .image_holder .img2 {
+    margin-top: -100px;
+    width: 580px;
+    height: 600px;
+    display: flex;
+    grid-template-rows: 1fr 13fr 1fr;
+    overflow: hidden;
+}
+
+.page3 .grid_holders .grid1 .image_holder .top_buttons {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.page3 .grid_holders .grid1 .image_holder .bottom_buttons {
+    margin-top: -130px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.page3 .grid_holders .grid2 {
+    width: 2080px;
+    height: 500px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 3fr;
+    overflow: hidden;
+}
+
+.page3 .grid_holders .grid2 .image_holder {
+    width: fit-content;
+    margin: 0 0;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 13fr 1fr;
+    overflow: hidden;
+    border: 10px solid var(--color2);
+}
+
+.page3 .grid_holders .grid2 .image_holder .img1 {
+    margin-top: -100px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    grid-template-rows: 1fr 13fr 1fr;
+    overflow: hidden;
+}
+
+.page3 .grid_holders .grid2 .image_holder .img2 {
+    margin-top: -100px;
+    width: 680px;
+    height: 600px;
+    display: flex;
+    grid-template-rows: 1fr 13fr 1fr;
+    overflow: hidden;
+}
+
+.page3 .grid_holders .grid2 .image_holder .top_buttons {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.page3 .grid_holders .grid2 .image_holder .bottom_buttons {
+    margin-top: -130px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.imgh {
+    cursor: pointer;
+    height: 30px;
+    transition: 0.2s;
+    background-color: var(--color3);
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.imgh2 {
+    cursor: pointer;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.img2 {
+    cursor: pointer;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.imgh:hover {
+    height: 40px;
+}
+
+.imgh2:hover {
+    height: 40px;
+}
+
+
